@@ -44,9 +44,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	document.write(__webpack_require__(5));
+	'use strict';
 
+	__webpack_require__(1);
+	window.onload = function () {
+	  document.getElementById('root').innerText = __webpack_require__(5);
+	};
 
 /***/ },
 /* 1 */
@@ -83,7 +86,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: yellow;\n}\n", ""]);
+	exports.push([module.id, "div {\n  background: yellow;\n}\n", ""]);
 
 	// exports
 
@@ -400,8 +403,9 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "It works from content.js";
+	"use strict";
 
+	module.exports = "It works from content.js";
 
 /***/ }
 /******/ ]);

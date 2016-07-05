@@ -1,2 +1,4 @@
 require('./style.css');
-document.write(require('./content.js'));
+window.onload = () => {
+  document.getElementById('root').innerText = require('./content.js');
+}
