@@ -86,7 +86,7 @@
 
 
 	// module
-	exports.push([module.id, "div {\n  background: yellow;\n}\n", ""]);
+	exports.push([module.id, "div {\n  background: cyan;\n}\n", ""]);
 
 	// exports
 
@@ -412,18 +412,18 @@
 	var render = _require.render;
 
 
-	var CommentBox = React.createClass({
-	  displayName: 'CommentBox',
+	var Hello = React.createClass({
+	  displayName: 'Hello',
 
 	  render: function render() {
 	    return React.createElement(
 	      'div',
-	      { className: 'commentBox' },
-	      'Hello, world! I am a CommentBox.'
+	      { className: 'hello' },
+	      'Hello, world!'
 	    );
 	  }
 	});
-	render(React.createElement(CommentBox, null), document.getElementById('root'));
+	render(React.createElement(Hello, null), document.getElementById('root'));
 
 /***/ },
 /* 6 */

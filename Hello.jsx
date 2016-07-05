@@ -1,16 +1,16 @@
 const React = require('react');
 const { render } = require('react-dom');
 
-const CommentBox = React.createClass({
+const Hello = React.createClass({
   render: function() {
     return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
+      <div className="hello">
+        Hello, world!
       </div>
     );
   }
 });
 render(
-  <CommentBox />,
+  <Hello />,
   document.getElementById('root')
 );
